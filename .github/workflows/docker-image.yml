@@ -28,6 +28,6 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: tricky42/act-runner:20.04,tricky42/act-runner:latest
+        tags: tricky42/act-runner:20.04.01,tricky42/act-runner:latest
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
